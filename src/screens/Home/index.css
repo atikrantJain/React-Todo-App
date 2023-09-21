@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0
+}
+.container{
+    display:flex;
+    width:100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+.headerTitle{
+    color: grey;
+    font-size: 30px;
+    text-align: center;
+}
+
+.todoInput{
+    width: 50%;
+    border-radius: 10px;
+    height: 40px;
+    flex-direction: column;
+    border-color: whitesmoke;
+    padding: 10px;
+}
+
+.todoButton{
+    height: auto;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+
