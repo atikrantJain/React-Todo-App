@@ -23,7 +23,7 @@ export default function BasicModal({
   openModal: boolean;
   handleClose: (e: any) => void;
   type: string;
-  data: TodoData;
+  data: TodoData | null;
   addTasks: (e: any) => void;
 }) {
   const [title, setTitle] = useState("");
