@@ -1,8 +1,9 @@
 import Modal from "@mui/material/Modal";
 import { useEffect, useState } from "react";
 import { ImCross } from "react-icons/im";
+import { TodoData } from "../screens/Home";
 
-const style = {
+const style: any = {
   position: "absolute",
   top: "50%",
   left: "50%",
@@ -18,6 +19,12 @@ export default function BasicModal({
   type,
   data,
   addTasks,
+}: {
+  openModal: boolean;
+  handleClose: (e: any) => void;
+  type: string;
+  data: TodoData;
+  addTasks: (e: any) => void;
 }) {
   const [title, setTitle] = useState("");
   const [status, setStatus] = useState("");

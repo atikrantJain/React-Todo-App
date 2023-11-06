@@ -12,7 +12,7 @@ interface State {
   };
 }
 
-interface TodoData {
+export interface TodoData {
   id: string;
   title: string;
   status: string;
@@ -181,7 +181,7 @@ function Home() {
               setIsModalOPen(false);
             }}
             addTasks={(e: TodoData) => {
-              if (e.title == "" || e.status === "") {
+              if (e.title === "" || e.status === "") {
                 alert("Please add task details");
               } else {
                 const data = {
