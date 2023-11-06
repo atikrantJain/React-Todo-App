@@ -3,7 +3,21 @@ import { BiPencil } from "react-icons/bi";
 import { RiDeleteBinLine } from "react-icons/ri";
 import "../index.css";
 
-function TodoItem({ data, deleteTodo, editTodo }) {
+interface Props {
+  data: TodoData;
+  deleteTodo: (data: TodoData) => void;
+  editTodo: (data: TodoData) => void;
+}
+
+interface TodoData {
+  id: string;
+  title: string;
+  status: string;
+  type?: string;
+  date?: string;
+}
+
+function TodoItem({ data, deleteTodo, editTodo }: Props) {
   return (
     <div
       style={{
